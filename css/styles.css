@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('../img/background.png');
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+.deck {
+     width: 600px;
+    /* min-height: 470px; */
+    background: linear-gradient(110deg, #d8d7d7 0%, #8d8b8d 100%);
+    padding: 17px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2e3d49;
+    box-shadow: 12px 15px 20px 0 rgba(47, 57, 65, 0.5);
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin: 0 0 2em; 
+    
+
+}
+.deck .card {
+    height: 100px;
+    width: 120px;
+    /* background: #b041f0; */
+    background: url(../img/Moon.gif);
+    font-size: 0;
+    color: #1d171c;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    margin-bottom: 12px;
+    margin-top: -10px;
+}
+
+.deck .card.open {
+    /* transform: rotateY(0) !important; */
+    background: #bbbbee;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 50px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #0bcf7e;
+    font-size: 50px;
+}
+
+
+
+.score-panel {
+    text-align: left;
+    width: 600px;
+    margin-bottom: 5px;
+    margin-top: -20px;
+
+}
+
+.score-panel .stars {
+    margin: 0 7px ;
+    padding: 0;
+    display: inline-block;
+    margin-left:38%; 
+    margin-top: 7px; 
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: left;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .deck .card{
+      width: 23%;
+      height: 95px;
+      line-height: 75px;
+      margin-left: 3px;
+    }
+  
+    .deck {
+      width: 500px;
+    }
+    .score-panel {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: -20px;
+    
+    }
+    .score-panel .stars {
+        
+        margin-left:30%;  
+        margin-top: 5px;
+    }
+}
+.titlegame{
+    margin: 25px;
+    font-weight: bold;
+}
+.title{
+    text-align: center;
+}
+
+.unvan{
+    color: green;
+}
+.indeximg{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50% ,-50%);
+}
+.divbtn{
+    margin: 10px;
+    position: relative;
+}
+.btnletsgo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    margin-top: 20px;
+    width: 106%;
+}
+.btnback{
+    display: inline-flex;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+}
